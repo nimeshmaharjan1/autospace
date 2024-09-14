@@ -51,13 +51,12 @@ export class AuthGuard implements CanActivate {
     req: any,
     context: ExecutionContext,
   ): Promise<boolean> {
-    const userRoles = await this.getUserRoles(req.user.uid);
-    req.user.roles = userRoles;
-
     const requiredRoles = this.getMetadata<Role[]>('roles', context);
     if (!requiredRoles || requiredRoles.length === 0) {
       return true;
     }
+    const userRoles = await this.getUserRoles(req.user.uid);
+    req.user.roles = userRoles;
 
     return requiredRoles.some((role) => userRoles.includes(role));
   }
