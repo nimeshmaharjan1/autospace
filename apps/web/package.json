@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "tsc": "tsc --noEmit",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "nx next:dev",
+    "build": "nx next:build",
+    "start": "nx next:start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@autospace/sample": "workspace:^",
+    "@autospace/sample": "*",
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18"
