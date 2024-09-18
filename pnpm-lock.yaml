@@ -84,6 +84,9 @@ importers:
       '@nestjs/testing':
         specifier: ^9.0.0
         version: 9.4.3(@nestjs/common@9.4.3(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@9.4.3(@nestjs/common@9.4.3(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/platform-express@9.4.3)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/platform-express@9.4.3(@nestjs/common@9.4.3(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@9.4.3))
+      '@types/bcryptjs':
+        specifier: ^2.4.6
+        version: 2.4.6
       '@types/express':
         specifier: ^4.17.13
         version: 4.17.21
@@ -96,6 +99,9 @@ importers:
       '@types/supertest':
         specifier: ^2.0.11
         version: 2.0.16
+      '@types/uuid':
+        specifier: ^10.0.0
+        version: 10.0.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.0.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@4.9.5))(eslint@8.57.0)(typescript@4.9.5)
@@ -987,6 +993,9 @@ packages:
   '@types/babel__traverse@7.20.6':
     resolution: {integrity: sha512-r1bzfrm0tomOI8g1SzvCaQHo6Lcv6zu0EA+W2kHrt8dyrHQxGzBBL4kdkzIS+jBMV+EYcMAEAqXqYaLJq5rOZg==}
 
+  '@types/bcryptjs@2.4.6':
+    resolution: {integrity: sha512-9xlo6R2qDs5uixm0bcIqCeMCE6HiQsIyel9KQySStiyqNl2tnj2mP3DX1Nf56MD6KMenNNlBBsy3LJ7gUEQPXQ==}
+
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
@@ -1091,6 +1100,9 @@ packages:
 
   '@types/supertest@2.0.16':
     resolution: {integrity: sha512-6c2ogktZ06tr2ENoZivgm7YnprnhYE4ZoXGMY+oA7IuAf17M8FWvujXZGmxLv8y0PTyts4x5A+erSwVUFA8XSg==}
+
+  '@types/uuid@10.0.0':
+    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==}
 
   '@types/validator@13.12.1':
     resolution: {integrity: sha512-w0URwf7BQb0rD/EuiG12KP0bailHKHP5YVviJG9zw3ykAokL0TuxU2TUqMB7EwZ59bDHYdeTIvjI5m0S7qHfOA==}
@@ -5061,6 +5073,8 @@ snapshots:
     dependencies:
       '@babel/types': 7.25.6
 
+  '@types/bcryptjs@2.4.6': {}
+
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
@@ -5186,6 +5200,8 @@ snapshots:
   '@types/supertest@2.0.16':
     dependencies:
       '@types/superagent': 8.1.9
+
+  '@types/uuid@10.0.0': {}
 
   '@types/validator@13.12.1': {}
 
